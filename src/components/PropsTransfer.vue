@@ -3,6 +3,8 @@
     <h1>{{ serialNumber }}、{{ title }}</h1>
     <BlogPost v-bind="blogPost" :num="count"/>
     <button @click="countPlus">count({{ count }}) +1</button>
+
+    <hr>
   </div>
 </template>
 

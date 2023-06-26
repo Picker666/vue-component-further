@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <PropsTransfer :serialNumber="1" />
+    <CustomEvent :serialNumber="2" />
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -9,12 +10,14 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue';
 import PropsTransfer from './components/PropsTransfer.vue';
+import CustomEvent from './components/CustomEvent.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    PropsTransfer
+    PropsTransfer,
+    CustomEvent
   }
 }
 </script>
