@@ -4,6 +4,8 @@
     <PropsTransfer :serialNumber="1" />
     <CustomEvent :serialNumber="2" />
     <SlotComponent :serialNumber="3" />
+    <DynamicAsyncComponent :serialNumber="4" />
+
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -13,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue';
 import PropsTransfer from './components/PropsTransfer.vue';
 import CustomEvent from './components/CustomEvent.vue';
 import SlotComponent from './components/SlotComponent';
+import DynamicAsyncComponent from './components/DynamicAsyncComponent';
 
 export default {
   name: 'App',
@@ -20,7 +23,8 @@ export default {
     HelloWorld,
     PropsTransfer,
     CustomEvent,
-    SlotComponent
+    SlotComponent,
+    DynamicAsyncComponent
   }
 }
 </script>
