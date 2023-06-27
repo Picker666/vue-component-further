@@ -20,7 +20,6 @@
 <script>
 import ArchiveComponent from './ArchiveComponent.vue';
 import PostComponent from './PostComponent.vue';
-// import AsyncComponent from './AsyncComponent.vue';
 import LoadingComponent from '../../common/LoadingComponent.vue';
 import ErrorComponent from '../../common/ErrorComponent.vue';
 
