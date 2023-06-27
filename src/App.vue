@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <PropsTransfer :serialNumber="1" />
     <CustomEvent :serialNumber="2" />
+    <SlotComponent :serialNumber="3" />
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -11,13 +12,15 @@
 import HelloWorld from './components/HelloWorld.vue';
 import PropsTransfer from './components/PropsTransfer.vue';
 import CustomEvent from './components/CustomEvent.vue';
+import SlotComponent from './components/SlotComponent';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     PropsTransfer,
-    CustomEvent
+    CustomEvent,
+    SlotComponent
   }
 }
 </script>
