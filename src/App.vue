@@ -5,6 +5,7 @@
     <CustomEvent :serialNumber="2" />
     <SlotComponent :serialNumber="3" />
     <DynamicAsyncComponent :serialNumber="4" />
+    <BoundaryHandle :serialNumber="5" />
 
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -16,6 +17,7 @@ import PropsTransfer from './components/PropsTransfer.vue';
 import CustomEvent from './components/CustomEvent.vue';
 import SlotComponent from './components/SlotComponent';
 import DynamicAsyncComponent from './components/DynamicAsyncComponent';
+import BoundaryHandle from './components/BoundaryHandle';
 
 export default {
   name: 'App',
@@ -24,7 +26,8 @@ export default {
     PropsTransfer,
     CustomEvent,
     SlotComponent,
-    DynamicAsyncComponent
+    DynamicAsyncComponent,
+    BoundaryHandle
   }
 }
 </script>
