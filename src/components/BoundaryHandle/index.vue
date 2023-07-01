@@ -5,18 +5,26 @@
     <ChildComponent ref="childCompRef" :serialNumber="1"/>
     <!-- 组件的循环引用 -->
     <TreeFolder :folder="folder"/>
+    <!-- 内联模版 -->
+    <InlineTemplate inline-template>
+      <div>this is inline template {{ serialNumber }}</div>
+    </InlineTemplate>
+
+    <hr>
   </div>
 </template>
 
 <script>
 import ChildComponent from './ChildComponent.vue';
 import TreeFolder from './TreeFolder.vue';
+import InlineTemplate from './InlineTemplate.vue';
 
 export default {
   name: "BoundaryHandle",
   components: {
     ChildComponent,
-    TreeFolder
+    TreeFolder,
+    InlineTemplate
   },
   props: {
     serialNumber: {
